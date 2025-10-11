@@ -116,14 +116,8 @@ The corresponding MongoDB user document is removed.
 This ensures perfect synchronization across services.
 
 ## 📊 Visualization Example
-mermaid
-Copy code
-graph TD
-A[User Uploads Code] --> B[Backend Sends Code to LLM]
-B --> C[LLM Returns Structured JSON Review]
-C --> D[Spring Boot Parses and Saves Data in MongoDB]
-D --> E[Frontend Fetches & Visualizes Results]
-E --> F[User Views Review History & Graphs]
+
+
 🧪 Future Enhancements
  🔍 Language Detection: Automatically identify the language of uploaded code.
 
@@ -132,6 +126,7 @@ E --> F[User Views Review History & Graphs]
  🧠 Custom LLM Models: Integrate fine-tuned models for specialized codebases.
 
  📈 Code Quality Metrics: Introduce maintainability and readability scoring.
+
 
 ## 🚀 Getting Started
 Prerequisites
