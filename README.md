@@ -88,7 +88,7 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 |-----------|---------|-------------|
 | `/review-code` | `POST` | Upload code file for AI review |
 | `/history` | `GET` | Fetch all code reviews for an authenticated user |
-| `/webhooks/clerk` | `POST` | Listens to `user.deleted` events and removes user data |
+
 
 ### LLM Integration
 The backend uses **Spring AI** to interact with a Large Language Model.  
@@ -155,7 +155,7 @@ This ensures perfect synchronization across services.
 
  🧑‍💻 Collaborative Review: Allow sharing of code reviews with teammates.
 
- 🧠 Custom LLM Models: Integrate fine-tuned models for specialized codebases.
+ 🧠  LLM Models: Gemini Flash 2.0.
 
  📈 Code Quality Metrics: Introduce maintainability and readability scoring.
 
@@ -186,30 +186,22 @@ bash
 Copy code
 # Backend (.env)
 CLERK_PUBLISHABLE_KEY=${Key}
+
 CLERK_SECRET_KEY=${Key}
+
 MONGODB_URI=${Uri}
+
 OPENAI_API_KEY=${Key}
-FRONTEND_URL=http://localhost:5173
+
+FRONTEND_PORT(local)= localhost:5173
 
 # Frontend (.env)
-VITE_BACKEND_URL=http://localhost:8080
+BACKEND_PORT(local)=localhost:8080
+
 VITE_CLERK_PUBLISHABLE_KEY=your_key
 
 
-## ❤️ Acknowledgements
-Spring Boot
-
-React
-
-Clerk
-
-MongoDB
-
-Recharts
-
-Spring AI
-
-“Empowering developers with intelligent feedback to write better code, faster.”
+## Demo Video
 
 
 ---
