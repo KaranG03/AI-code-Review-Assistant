@@ -27,7 +27,7 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 ## 🧠 Core Functionality
 
 - **Upload Source Code:** Users upload `.java`, `.cpp`, `.py`, or other supported source files.
-- **AI Code Review:** The backend sends the code to an LLM with a carefully engineered prompt for consistent, structured responses.
+- **AI Code Review:** The backend sends the code to Gemini LLM with a carefully engineered prompt for consistent, structured responses.
 - **Comprehensive Feedback:** The AI returns a rich JSON object containing:
   - ✅ **Code Summary**
   - 🛠️ **Corrected Code**
