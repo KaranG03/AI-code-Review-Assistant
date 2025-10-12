@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Code {
 
-    // Use @JsonProperty to map the JSON keys (with spaces) to your Java fields.
+    
     @JsonProperty("Language Detected")
     private String languageDetected;
 
@@ -45,7 +45,5 @@ public class Code {
 
     @JsonProperty("Testability")
     private List<String> testability;
-
-    // Add a timestamp for when the review was created.
     private LocalDateTime reviewedAt;
 }
