@@ -1,0 +1,79 @@
+/* src/pages/HomePage.css */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  
+  /* Add a subtle background pattern for texture */
+  background-image:
+    radial-gradient(circle at 1px 1px, var(--border-color) 1px, transparent 0);
+  background-size: 2rem 2rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 800px;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  
+  /* A beautiful text gradient */
+  background: linear-gradient(90deg, var(--primary-color), #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  /* Animation */
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+
+  /* Animation with a delay */
+  opacity: 0;
+  animation: slideInFromBottom 0.8s ease-out 0.3s forwards;
+}
+
+.hero-cta {
+  margin-top: 3rem;
+  
+  /* Animation with a longer delay */
+  opacity: 0;
+  animation: slideInFromBottom 0.8s ease-out 0.6s forwards;
+}
+
+/* Re-using the .btn class from index.css for consistency */
+.hero-cta .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+/* Keyframe animation for the text */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

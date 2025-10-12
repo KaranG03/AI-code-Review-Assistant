@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+  /* Colors */
+  --primary-color: #4f46e5; /* A vibrant indigo for primary actions */
+  --primary-hover-color: #4338ca;
+  --secondary-color: #10b981; /* A nice green for success states */
+  --background-gradient-start: #ffffff;
+  --background-gradient-end: #f0f4f8;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --card-background: #ffffff;
+  --border-color: #e5e7eb;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  --border-radius: 12px;
+  --card-padding: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: linear-gradient(180deg, var(--background-gradient-start) 0%, var(--background-gradient-end) 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+}
+
+/* 4. GENERIC COMPONENT STYLES (BUTTONS, INPUTS, CARDS) */
+/* src/index.css */
+
+/* ... all your other styles like :root, body, h1 etc. are correct ... */
+
+/* 4. GENERIC COMPONENT STYLES (BUTTONS, INPUTS, CARDS) */
+
+/* ✅ CHANGED: From 'button' to '.btn' to increase specificity */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+  text-align: center; /* Ensures text is centered */
+  display: inline-block; /* Ensures proper padding and sizing */
+}
+
+/* ✅ CHANGED: From 'button:hover' to '.btn:hover' */
+.btn:hover {
+  background-color: var(--primary-hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 10px rgba(79, 70, 229, 0.15);
+}
+
+/* ✅ CHANGED: From 'button:active' to '.btn:active' */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+}
+
+/* ✅ CHANGED: From 'button:disabled' to '.btn:disabled' */
+.btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+/* A subtle hover effect for cards */
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Add this to src/index.css */
+
+.advanced-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Add these styles at the end of src/index.css */
+
+.empty-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0fdf4; /* A very light green background */
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+.empty-feedback-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.empty-feedback p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #15803d; /* A darker green for the text */
+  margin: 0;
+}

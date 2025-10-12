@@ -1,0 +1,151 @@
+/* src/components/History.css */
+
+.history-container {
+  margin-top: 3rem;
+}
+
+.history-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.history-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.history-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--background-gradient-end);
+  border-radius: var(--border-radius);
+  border: 1px dashed var(--border-color);
+}
+
+/* --- History Item Styling --- */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.history-item {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.history-item-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.summary-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.summary-info span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  transition: transform 0.3s ease;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: none;
+}
+.expand-btn.expanded {
+  transform: rotate(180deg);
+  color: var(--primary-color);
+}
+
+/* --- Accordion Animation --- */
+.history-item-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease-in-out;
+  padding: 0 1.5rem;
+}
+
+.history-item-details.show {
+  max-height: 2000px;
+  opacity: 1;
+  transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* --- Pagination Controls --- */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination-controls span {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.btn-secondary {
+  background-color: var(--card-background);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary:disabled {
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+  cursor: not-allowed;
+}
+
+/* Reusing styles for consistency inside the expanded view */
+.history-item-details .result-section { margin-bottom: 2rem; }
+.history-item-details .result-section h3 { font-size: 1.25rem; margin-bottom: 1rem; border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; display: inline-block; }
+.history-item-details .code-block { background-color: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 8px; font-family: 'Fira Code', monospace; }
+.history-item-details .feedback-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.history-item-details .feedback-list { list-style: none; padding-left: 0; }
+.history-item-details .feedback-list li { 
+  position: relative; 
+  padding-left: 28px; 
+  margin-bottom: 0.75rem; 
+  text-align: justify; /* ✅ THIS IS THE LINE YOU NEED TO ADD */
+}
+.history-item-details .feedback-list li::before { content: ''; position: absolute; left: 0; top: 5px; width: 16px; height: 16px; border-radius: 50%; font-weight: bold; color: white; text-align: center; font-size: 12px; line-height: 16px; }
+.history-item-details .feedback-list.positive li::before { content: '✔'; background-color: #10b981; }
+.history-item-details .feedback-list.critical li::before { content: '✖'; background-color: #ef4444; }
+.history-item-details .feedback-title { border-bottom: none !important; margin-bottom: 0.5rem !important; }
+.history-item-details .feedback-title.positive { color: #10b981; }
+.history-item-details .feedback-title.critical { color: #ef4444; }

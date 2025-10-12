@@ -1,0 +1,78 @@
+/* src/components/Header.css */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.5rem; /* Increased padding for a more spacious feel */
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky; /* Makes the header stick to the top on scroll */
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px); /* Frosted glass effect for supported browsers */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+.logo-link:hover h1 {
+  color: var(--primary-hover-color);
+}
+
+.header-nav .nav-links {
+  display: flex;
+  gap: 2rem; /* Increased gap for better spacing */
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Style for the currently active page link */
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Styling the Clerk UserButton for consistency */
+.cl-userButton-root {
+  width: 40px;
+  height: 40px;
+}

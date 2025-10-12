@@ -1,0 +1,202 @@
+/* src/components/FileUpload.css */
+
+.file-upload-container {
+  background-image: linear-gradient(to top, #f9fafb 0%, #ffffff 100%);
+}
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.upload-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* --- Form and Custom File Input --- */
+.upload-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  border: 2px dashed var(--border-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.upload-form:hover {
+  border-color: var(--primary-color);
+  background-color: #fcfcff;
+}
+
+.custom-file-input {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  flex-grow: 1;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.custom-file-input:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.custom-file-input input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* --- Results Section --- */
+.results-container {
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.result-section {
+  margin-bottom: 2.5rem;
+}
+
+.result-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.code-block {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: 'Fira Code', monospace;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Feedback Grid Layout --- */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feedback-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feedback-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.75rem;
+  text-align: justify; /* ✅ THIS IS THE LINE YOU NEED TO ADD */
+}
+
+/* Custom list item icons */
+.feedback-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Styling for each feedback type */
+.feedback-list.positive li::before { content: '✔'; background-color: #10b981; }
+.feedback-list.critical li::before { content: '✖'; background-color: #ef4444; }
+.feedback-list.suggestions li::before { content: '💡'; background-color: #3b82f6; }
+.feedback-list.security li::before { content: '🛡️'; background-color: #f59e0b; }
+
+.feedback-title { border-bottom: none !important; margin-bottom: 0.5rem !important; }
+.feedback-title.positive { color: #10b981; }
+.feedback-title.critical { color: #ef4444; }
+.feedback-title.suggestions { color: #3b82f6; }
+.feedback-title.security { color: #f59e0b; }
+
+
+/* --- Graph Section --- */
+.graph-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #fdfdff, #f6f7fa);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.graph-container h4 {
+  margin-top: 0;
+}
+
+
+/* --- Loader Styles --- */
+.advanced-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
