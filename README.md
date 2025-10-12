@@ -11,13 +11,17 @@ An advanced **AI-driven Code Review Assistant** web application that analyzes up
 
 
 
-![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic2.png?raw=true)
-![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic1.png?raw=true)
+  
+
+
+
 
 ## 🌟 Overview
 
 The **Code Review Assistant** leverages AI to simulate the experience of having a professional software engineer review your code.  
 Users can upload their code files, receive structured, in-depth feedback, and access past analyses in a secure and seamless environment.
+
+![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic1.png?raw=true)
 
 ---
 
@@ -33,6 +37,18 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
   - ⏱️ **Worst-Case Time & Space Complexity**
 - **User History:** All reviews are saved for authenticated users and can be revisited later.
 - **Interactive Visualization:** Graphs plot the algorithm’s **time and space complexity** growth rates dynamically.
+
+![pic5](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic5.png?raw=true)  
+## 
+![pic6](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic6.png?raw=true)
+
+##  
+![pic8](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic8.png?raw=true)  
+
+##  
+
+![pic9](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic9.png?raw=true)  
+
 
 ---
 
@@ -54,6 +70,14 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 - **Spring Security** protects backend APIs.
 - Every request from the frontend includes a **JWT token**, which the backend verifies before allowing access to protected routes.
 
+![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic2.png?raw=true)
+
+##   
+![pic3](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic3.png?raw=true)  
+
+##  
+![pic4](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic4.png?raw=true)  
+
 ---
 
 ## 🧩 Backend Architecture
@@ -69,6 +93,8 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 ### LLM Integration
 The backend uses **Spring AI** to interact with a Large Language Model.  
 It crafts structured prompts to return **machine-readable JSON**, ensuring consistency in parsing and visualization.
+
+![pic7](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic7.png?raw=true)  
 
 ---
 
@@ -123,7 +149,7 @@ This ensures perfect synchronization across services.
 
 ## 📊 Visualization Example
 
-
+![seq dig](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/seq%20dig.png?raw=true)
 🧪 Future Enhancements
  🔍 Language Detection: Automatically identify the language of uploaded code.
 
@@ -159,10 +185,10 @@ Environment Variables
 bash
 Copy code
 # Backend (.env)
-CLERK_PUBLISHABLE_KEY=your_key
-CLERK_SECRET_KEY=your_key
-MONGODB_URI=your_mongo_uri
-OPENAI_API_KEY=your_ai_key
+CLERK_PUBLISHABLE_KEY=${Key}
+CLERK_SECRET_KEY=${Key}
+MONGODB_URI=${Uri}
+OPENAI_API_KEY=${Key}
 FRONTEND_URL=http://localhost:5173
 
 # Frontend (.env)
