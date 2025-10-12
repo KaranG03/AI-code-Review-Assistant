@@ -9,6 +9,11 @@ An advanced **AI-driven Code Review Assistant** web application that analyzes up
 
 ---
 
+
+
+![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic2.png?raw=true)
+![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic1.png?raw=true)
+
 ## 🌟 Overview
 
 The **Code Review Assistant** leverages AI to simulate the experience of having a professional software engineer review your code.  
