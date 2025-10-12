@@ -1,6 +1,6 @@
 # 🤖 AI-Powered Code Review Assistant
 
-An advanced **AI-driven Code Review Assistant** web application that analyzes uploaded source code files, generates detailed feedback using a Large Language Model (LLM), and provides a beautiful, interactive dashboard for users to view their code review history.
+An advanced **AI-driven Code Review Assistant** web application that analyzes uploaded source code files, generates detailed feedback using Gemini flash 2.0 Large Language Model (LLM), and provides a beautiful, interactive dashboard for users to view their code review history.
 
 ![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-green)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
