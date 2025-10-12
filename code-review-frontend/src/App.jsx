@@ -7,10 +7,10 @@ import DashboardPage from './Pages/DashboardPage';
 function App() {
   return (
     <Routes>
-      {/* 任何人都可以访问这个公共页面 */}
+      {/* */}
       <Route path="/" element={<HomePage />} />
 
-      {/* ✅ This is the protected route */}
+      {/* protected route */}
       <Route
         path="/dashboard"
         element={
