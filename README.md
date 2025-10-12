@@ -68,6 +68,7 @@ It crafts structured prompts to return **machine-readable JSON**, ensuring consi
 ---
 
 ## 💾 Data Persistence
+![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/db%20img.png?raw=true)
 
 - MongoDB stores user data in a `users` collection.
 - Each user document is linked by **Clerk ID**.
