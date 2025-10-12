@@ -200,8 +200,5 @@ BACKEND_PORT(local)=localhost:8080
 VITE_CLERK_PUBLISHABLE_KEY=your_key
 
 
-## Demo Video
-
-
 ---
 
