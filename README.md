@@ -190,7 +190,7 @@ CLERK_SECRET_KEY=${Key}
 
 MONGODB_URI=${Uri}
 
-OPENAI_API_KEY=${Key}
+GEMINI_API_KEY=${Key}
 
 FRONTEND_PORT(local)= localhost:5173
 
