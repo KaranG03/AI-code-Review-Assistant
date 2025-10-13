@@ -90,7 +90,8 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 
 
 ### LLM Integration
-The backend uses **Spring AI** to interact with a Large Language Model.  
+The backend uses **Spring AI** to interact with Gemini Flash 2.0 Large Language Model.  
+
 It crafts structured prompts to return **machine-readable JSON**, ensuring consistency in parsing and visualization.
 
 ![pic7](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic7.png?raw=true)  
@@ -161,6 +162,7 @@ This ensures perfect synchronization across services.
 
 ## 🚀 Getting Started
 Prerequisites
+
 Node.js ≥ 18
 
 Java ≥ 17
@@ -170,20 +172,21 @@ MongoDB
 Clerk API credentials
 
 Backend Setup
-bash
-Copy code
+
 cd code-review-backend
 ./mvnw spring-boot:run
+
 Frontend Setup
-bash
-Copy code
+
 cd code-review-frontend
+
 npm install
+
 npm run dev
-Environment Variables
-bash
-Copy code
-# Backend (.env)
+
+## Environment Variables
+
+- Backend (.env)
 CLERK_PUBLISHABLE_KEY=${Key}
 
 CLERK_SECRET_KEY=${Key}
@@ -194,10 +197,10 @@ GEMINI_API_KEY=${Key}
 
 FRONTEND_PORT(local)= localhost:5173
 
-# Frontend (.env)
+-Frontend (.env)
 BACKEND_PORT(local)=localhost:8080
 
-VITE_CLERK_PUBLISHABLE_KEY=your_key
+VITE_CLERK_PUBLISHABLE_KEY=${Key}
 
 
 ---
