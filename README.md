@@ -161,46 +161,46 @@ This ensures perfect synchronization across services.
 
 
 ## 🚀 Getting Started
-Prerequisites
+**Prerequisites:**
 
-Node.js ≥ 18
+- Node.js ≥ 18
 
-Java ≥ 17
+- Java ≥ 17
 
-MongoDB
+- MongoDB
 
-Clerk API credentials
+- Clerk API credentials
 
-Backend Setup
+**Backend Setup:**
 
-cd code-review-backend
-./mvnw spring-boot:run
+- cd code-review-backend
+- ./mvnw spring-boot:run
 
-Frontend Setup
+**Frontend Setup:**
 
-cd code-review-frontend
+- cd code-review-frontend
 
-npm install
+- npm install
 
-npm run dev
+- npm run dev
 
 ## Environment Variables
 
-- Backend (.env)
-CLERK_PUBLISHABLE_KEY=${Key}
+**Backend (.env):**
+- CLERK_PUBLISHABLE_KEY=${Key}
 
-CLERK_SECRET_KEY=${Key}
+- CLERK_SECRET_KEY=${Key}
 
-MONGODB_URI=${Uri}
+- MONGODB_URI=${Uri}
 
-GEMINI_API_KEY=${Key}
+- GEMINI_API_KEY=${Key}
 
-FRONTEND_PORT(local)= localhost:5173
+- FRONTEND_PORT(local)= localhost:5173
 
--Frontend (.env)
-BACKEND_PORT(local)=localhost:8080
+**Frontend (.env):**
+- BACKEND_PORT(local)=localhost:8080
 
-VITE_CLERK_PUBLISHABLE_KEY=${Key}
+- VITE_CLERK_PUBLISHABLE_KEY=${Key}
 
 
 ---
