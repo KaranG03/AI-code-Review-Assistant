@@ -20,7 +20,7 @@ High Quality Video Link: https://drive.google.com/file/d/1nzdGBESo3UcnvgYxBIFP0Y
 The **Code Review Assistant** leverages AI to simulate the experience of having a professional software engineer review your code.  
 Users can upload their code files, receive structured, in-depth feedback, and access past analyses in a secure and seamless environment.
 
-![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic1.png?raw=true)
+![image alt](https://github.com/KaranG03/eCom/blob/main/pic1.png?raw=true)
 
 ---
 
@@ -37,16 +37,16 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 - **User History:** All reviews are saved for authenticated users and can be revisited later.
 - **Interactive Visualization:** Graphs plot the algorithm’s **time and space complexity** growth rates dynamically.
 
-![pic5](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic5.png?raw=true)  
+![pic5](https://github.com/KaranG03/eCom/blob/main/pic5.png?raw=true)  
 ## 
-![pic6](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic6.png?raw=true)
+![pic6](https://github.com/KaranG03/eCom/blob/main/pic6.png?raw=true)
 
 ##  
-![pic8](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic8.png?raw=true)  
+![pic8](https://github.com/KaranG03/eCom/blob/main/pic8.png?raw=true)  
 
 ##  
 
-![pic9](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic9.png?raw=true)  
+![pic9](https://github.com/KaranG03/eCom/blob/main/pic9.png?raw=true)  
 
 
 ---
@@ -69,13 +69,13 @@ Users can upload their code files, receive structured, in-depth feedback, and ac
 - **Spring Security** protects backend APIs.
 - Every request from the frontend includes a **JWT token**, which the backend verifies before allowing access to protected routes.
 
-![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic2.png?raw=true)
+![image alt](https://github.com/KaranG03/eCom/blob/main/pic2.png?raw=true)
 
 ##   
-![pic3](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic3.png?raw=true)  
+![pic3](https://github.com/KaranG03/eCom/blob/main/pic3.png?raw=true)  
 
 ##  
-![pic4](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic4.png?raw=true)  
+![pic4](https://github.com/KaranG03/eCom/blob/main/pic4.png?raw=true)  
 
 ---
 
@@ -94,12 +94,12 @@ The backend uses **Spring AI** to interact with Gemini Flash 2.0 Large Language 
 
 It crafts structured prompts to return **machine-readable JSON**, ensuring consistency in parsing and visualization.
 
-![pic7](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/pic7.png?raw=true)  
+![pic7](https://github.com/KaranG03/eCom/blob/main/pic7.png?raw=true)  
 
 ---
 
 ## 💾 Data Persistence
-![image alt](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/db%20img.png?raw=true)
+![image alt](https://github.com/KaranG03/eCom/blob/main/db%20img.png?raw=true)
 
 - MongoDB stores user data in a `users` collection.
 - Each user document is linked by **Clerk ID**.
@@ -149,7 +149,7 @@ This ensures perfect synchronization across services.
 
 ## 📊 Visualization Example
 
-![seq dig](https://github.com/KaranG03/AI-code-Review-Assistant/blob/main/seq%20dig.png?raw=true)
+![seq dig](https://github.com/KaranG03/eCom/blob/main/seq%20dig.png?raw=true)
 🧪 Future Enhancements
  🔍 Language Detection: Automatically identify the language of uploaded code.
 
